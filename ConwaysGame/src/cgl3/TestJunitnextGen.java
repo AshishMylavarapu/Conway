@@ -31,7 +31,7 @@ public class TestJunitnextGen {
 			}
 		}
 		String expected = "false_false_false_false_false\n"		/**Expected output*/
-				+ "false_false_false_false_false\n"
+				+ "false_false_true_false_false\n"
 				+ "false_false_false_true_false\n"
 				+ "false_false_false_false_false\n"
 				+ "false_false_false_false_false";

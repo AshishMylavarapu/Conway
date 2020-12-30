@@ -8,7 +8,7 @@ package cgl3;
  *Creating a class ConwaysGameofLife
  */
 public class ConwaysGameofLife {
-	public String start(String input, int n, int [][] livecells, String shift, int generation) {
+	public String start(String input, int m, int n, int [][] livecells, String shift, int generation) {
 		boolean condition;
 		if(input.equals("start")) {
 			condition = true;					/** if we enter start then will create board */
@@ -25,7 +25,7 @@ public class ConwaysGameofLife {
 				boolean[][] curgen =null;
 				for (int i=0;i<generation;i++) {
 					if(i==0) {
-						curgen=obj.createBoard(n, livecells);
+						curgen=obj.createBoard(m,n, livecells);
 						
 					}
 					else {
@@ -47,7 +47,7 @@ public class ConwaysGameofLife {
 				boolean[][] curgen =null;
 				for (int i=0;;i++) {
 					if(i==0) {
-						curgen=obj.createBoard(n, livecells);
+						curgen=obj.createBoard(m,n, livecells);
 						
 						
 					}

@@ -10,8 +10,8 @@ package cgl3;
  
  /** creation of board */
 public class Board {
-	public boolean[][] createBoard(int n, int l[][]) {	/** creation of board method */
-        boolean cglBoard[][] =new boolean[n][n];		/** creation of 2d boolean array */
+	public boolean[][] createBoard(int m, int n, int l[][]) {	/** creation of board method */
+        boolean cglBoard[][] =new boolean[m][n];		/** creation of 2d boolean array */
         for (int i=0;i<l.length;i++){
             int row = l[i][0];
             int col = l[i][1];								/** checking the livecells and making them true */
@@ -27,7 +27,7 @@ public class Board {
 //        int row=board.length;
         String con="";
         for (int i=0; i<board.length;i++){
-            for (int j=0;j<board.length;j++){
+            for (int j=0;j<board[i].length;j++){
                 if(board[i][j]){
                     con+="*";
                 }
@@ -47,14 +47,14 @@ public class Board {
     }
 	
 	public boolean[][] nextGen(boolean [][]board) {		/** creation of nextgeneration method  used to develop the next generation*/
-        boolean [][] gen = new boolean [board.length][board.length];
+        boolean [][] gen = new boolean [board.length][board[0].length];
         for(int i=0;i<board.length;i++){
-            for(int j=0;j<board.length;j++){
+            for(int j=0;j<board[i].length;j++){
                 gen[i][j]=false;
             }
         }
         for(int i=0;i<board.length;i++){
-            for(int j=0;j<board.length;j++){
+            for(int j=0;j<board[i].length;j++){
                 int cnt=0;
                 int x = i -1;
                 int y = j-1;

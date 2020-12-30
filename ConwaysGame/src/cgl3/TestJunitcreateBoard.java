@@ -16,11 +16,12 @@ public class TestJunitcreateBoard {
 	@Test
 	public void testcase2() {
 		int n =5;
+		int m =5;
 		
 	
 		int current [][]= {{2,1},{2,4},{3,4},{4,3}};  			/**Assigining inputs for creating a board*/
 		Board obj = new Board();
-		boolean [][] x = obj.createBoard(n,current);
+		boolean [][] x = obj.createBoard(m,n,current);
 		String sol = "";
 		for (int i=0;i<x.length;i++) {
 			for (int j=0;j<x.length;j++) {

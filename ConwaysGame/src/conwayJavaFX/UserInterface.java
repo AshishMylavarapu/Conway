@@ -276,8 +276,9 @@ public class UserInterface {
 	private void loadImageData() {
 		try {
 			// Your code goes here......
+			// inserting live cells with a color // 
 			Board obj = new Board();
-			current = obj.createBoard(boardSizeHeight, livecells);
+			current = obj.createBoard(boardSizeHeight,boardSizeWidth, livecells);
 			for (int i=0;i<current.length;i++) {
 				for (int j=0;j<current.length;j++) {
 					if(current[i][j]==true) {
