@@ -282,9 +282,8 @@ public class UserInterface {
 			for (int i=0;i<current.length;i++) {
 				for (int j=0;j<current.length;j++) {
 					if(current[i][j]==true) {
-						Rectangle grid = new Rectangle(5,5);
+						Rectangle grid = new Rectangle(5,5,Color.BLACK);
 						grid.relocate(6*i,6*j);
-						grid.setFill(Color.BLACK);
 						oddCanvas.getChildren().add(grid);
 					}
 				}
@@ -338,9 +337,8 @@ public class UserInterface {
 		for (int i=0;i<nextgen.length;i++) {
 			for (int j=0;j<nextgen.length;j++) {
 				if(nextgen[i][j]==true) {
-					Rectangle grid = new Rectangle(5,5);
+					Rectangle grid = new Rectangle(5,5,Color.BLACK);
 					grid.relocate(6*i,6*j);
-					grid.setFill(Color.BLACK);
 					oddCanvas.getChildren().add(grid);
 				}
 			}
